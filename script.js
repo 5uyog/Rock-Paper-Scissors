@@ -23,13 +23,13 @@ const winner=(userWin,userChoice,compChoice) => {
     if(userWin){
         userScore++;
         user.innerText=userScore;
-        result.innerText=`You win :) Your ${userChoice} beats ${compChoice} `;
+        result.innerText=`You win :) You  chose ${userChoice}. Computer chose ${compChoice} `;
         result.style.backgroundColor= "green";
     }
     else{
         compScore++;
         comp.innerText=compScore;
-        result.innerText=`You lost :( ${compChoice} beats your ${userChoice} `;
+        result.innerText=`You lost :( You  chose ${userChoice}. Computer chose ${compChoice} `;
         result.style.backgroundColor= "red";
     }
 }

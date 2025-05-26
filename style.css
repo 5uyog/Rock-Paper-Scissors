@@ -18,7 +18,10 @@ header {
   width: 50px;
 }
 .title {
-  color: rgb(23, 152, 212);
+  background: linear-gradient(to right, rgb(210, 46, 62), hsla(210, 92%, 54%, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 p {
   color: white;
