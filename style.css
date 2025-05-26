@@ -71,9 +71,21 @@ p {
     margin-top:3rem ;
     
 }
+
+
 #result{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 11px;
     display: inline;
     padding: 1rem;
+}
+@media (max-width:1062px){
+  #result{
+    font-size: 1rem;
+  }
+}
+@media (max-width:560px){
+  #result{
+    font-size: 0.5rem;
+  }
 }
