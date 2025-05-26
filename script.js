@@ -23,14 +23,14 @@ const winner=(userWin,userChoice,compChoice) => {
     if(userWin){
         userScore++;
         user.innerText=userScore;
-        result.innerText=`You win :) You  chose ${userChoice}. Computer chose ${compChoice} `;
-        result.style.backgroundColor= "green";
+        result.innerText=`You win :) You  chose ${userChoice}. Computer chose ${compChoice}. `;
+        result.style.backgroundColor= "rgb(31,132,90)";
     }
     else{
         compScore++;
         comp.innerText=compScore;
-        result.innerText=`You lost :( You  chose ${userChoice}. Computer chose ${compChoice} `;
-        result.style.backgroundColor= "red";
+        result.innerText=`You lost :( You  chose ${userChoice}. Computer chose ${compChoice}. `;
+        result.style.backgroundColor= "rgb(201,55,44)";
     }
 }
 
