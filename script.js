@@ -8,7 +8,7 @@ const user=document.querySelector("#user-score")
 const comp=document.querySelector("#comp-score")
 
 const getCompChoice=() => {
-    const choices=["rock","paper","scissors"]
+    const choices=["srk","salman","aamir"]
     const ind= Math.floor(Math.random() * 3);
     return choices[ind]
 }
@@ -46,14 +46,14 @@ if(userChoice === compChoice){
 }
 else{
     let userWin = true;
-    if(userChoice === "rock"){
-        userWin = compChoice === "paper" ? false:true;
+    if(userChoice === "srk"){
+        userWin = compChoice === "salman" ? false:true;
     }
-    else if(userChoice === "paper"){
-        userWin = compChoice === "scissors" ? false:true;
+    else if(userChoice === "salman"){
+        userWin = compChoice === "aamir" ? false:true;
     }
     else{
-        userWin = compChoice === "rock" ? false:true;
+        userWin = compChoice === "srk" ? false:true;
     }
     winner(userWin,userChoice,compChoice);
 }
